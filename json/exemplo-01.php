@@ -13,6 +13,4 @@
         'idade'=>29 
     ));
 
-    echo "<pre>";
     echo json_encode($pessoas);
-    echo "</pre>";
