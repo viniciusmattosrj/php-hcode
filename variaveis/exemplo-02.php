@@ -8,8 +8,7 @@
     echo $nomeCompleto;
     exit;
 
-    echo $nome;
-    echo "<br/>";
+    echo $nome ."<br/>";
 
     //Unset limpou(destruiu) a variável
     unset($nome);

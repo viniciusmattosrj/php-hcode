@@ -21,9 +21,7 @@
     
     echo "<pre>";
     var_dump($nascimento);
-    echo "</pre>";
-
-    echo "<br/>";
+    echo "</pre><br/>";
 
     /* TIPOS ESPECIAIS */
     $arquivo = fopen("exemplo-03.php","r");

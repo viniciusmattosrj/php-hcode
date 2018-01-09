@@ -3,12 +3,8 @@
     /* OPERADORES DE INCREMENTO */
     $a = 10;
 
-    echo ++$a;
+    echo ++$a . "<br/>";
     
-    echo "<br/>";
-
-    echo $a;
-
-    echo "<br/>";
+    echo $a ."<br/>";
 
     echo --$a;
