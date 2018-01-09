@@ -18,3 +18,7 @@
     
     echo $a % $b;
     echo "<br/>";
+
+    //Ao quadro
+    echo $a ** $b;
+    echo "<br/>";
