@@ -1,3 +1,3 @@
 <?php
 
-    echo "Olá Mundo 456";
+    echo "Seja bem vindo ao Curso Completo com PHP7 da HCode";
