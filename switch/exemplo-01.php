@@ -1,7 +1,7 @@
 <?php
 
     /* CONTROLE DE FLUXO - SWITCH */
-    $diaDaSemana = 8;//date("w");
+    $diaDaSemana = date("w");
     
     switch($diaDaSemana)
     {
