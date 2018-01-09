@@ -1,6 +1,6 @@
 <?php
 
     /* INCLUDE - Tenta funcionar mesmom que o arquivo exista e esteja com problema */
-    include "exemplo-01.php";
+    include "inc/exemplo-01.php";
     $resultado = somar(10, 20);
     echo $resultado;
