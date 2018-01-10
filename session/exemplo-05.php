@@ -9,14 +9,14 @@
     var_dump(session_status());
     switch(session_status())
     {
-        case 0:
-            echo " - Sessões desabilitadas";
+        case PHP_SESSION_DISABLED:
+            echo " - As sessões estiverem desabilitadas";
             break;
-        case 1:
-            echo " - Sessões habilitadas, mas nenhuma existe.";
+        case PHP_SESSION_NONE:
+            echo " - As sessões estiverem habilitadas, mas nenhuma existir.";
             break;
-        case 2:
-            echo " - Sessões habilitadas, existe uma ativa.";
+        case PHP_SESSION_ACTIVE:
+            echo " - As sessões estiverem habilitadas, e uma existir.";
             break;
         default:
             echo " - Opção Inválida";
