@@ -1,6 +1,6 @@
 <?php
 
-    /* POO - CRIANDO CLASSE */
+    /* POO - CLASSE */
 
     class Pessoa{
         public $nome; //Atributo
