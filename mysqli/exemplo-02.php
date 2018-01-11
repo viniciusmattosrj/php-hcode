@@ -9,7 +9,7 @@
 
     $result = $conn->query("SELECT * FROM tb_usuarios ORDER BY deslogin");
 
-    while($row = $result->fetch_array(MYSQLI_ASSOC))
+    while($row = $result->fetch_assoc())
     {
         echo "<pre>";
         var_dump($row);
