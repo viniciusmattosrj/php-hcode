@@ -1,5 +1,5 @@
 <?php
-    require_once "../../exibe-erros.php";
+    //require_once "../../exibe-erros.php";
 
     /* POO - AUTOLOAD */
     interface Veiculo
