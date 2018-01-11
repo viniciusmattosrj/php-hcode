@@ -17,8 +17,9 @@
     class Programador extends Pessoa{
         
         public function verDados(){
-
-            echo get_class($this) . "<br>";
+            //INICIO: Inserido só pra exibir os níves de encapsulamento objeto 
+            //echo get_class($this) . "<br>";
+            //FIM:
 
             echo $this->nome . "<br>";
             echo $this->idade . "<br>";
