@@ -1,7 +1,5 @@
 <?php
-    ini_set('display_errors', 1);
-    ini_set('log_errors', 1);
-    error_reporting(E_ALL);
+    require_once "../../exibe-erros.php";
 
     /* POO - MODIFICADORES DE ACESSO - ENCAPSULAMENTO */    
     class Pessoa{
@@ -19,6 +17,9 @@
     class Programador extends Pessoa{
         
         public function verDados(){
+
+            echo get_class($this) . "<br>";
+
             echo $this->nome . "<br>";
             echo $this->idade . "<br>";
             echo $this->senha . "<br>";
