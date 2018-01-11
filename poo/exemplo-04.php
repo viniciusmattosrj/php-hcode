@@ -11,7 +11,7 @@
         public function __construct($a,$b,$c){
             $this->logradouro = $a;
             $this->numero = $b;
-            $this->$cidade = $c;
+            $this->cidade = $c;
         }
 
         public function __destruct(){
@@ -19,14 +19,18 @@
         }
 
         public function __toString(){
-            return $this->logradouro.", ".$this->numero." . ".$this->cidade;
+            return $this->logradouro.", ".$this->numero." - ".$this->cidade." ";
         }
     }
 
-    $meuEndereco = new Endereco("Av. Américas",700,"Rio de Janeiro");
+    $meuEndereco = new Endereco("Av. Américas","700","Rio de Janeiro");
 
-    echo "<pre>";
-    var_dump($meuEndereco);
-    echo "</pre>";
+    echo $meuEndereco;
+    /*
+        echo "<pre>";
+        var_dump($meuEndereco);
+        echo "</pre>";
 
-    unset($meuEndereco);
+        //unset($meuEndereco);
+    */
+    
