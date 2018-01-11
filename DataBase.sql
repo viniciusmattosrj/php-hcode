@@ -1,3 +1,5 @@
+/**/
+
 USE dbphp7;
 
 CREATE TABLE tb_usuarios(
