@@ -9,6 +9,18 @@
 
 	$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-	echo "<pre>";
-	var_dump($results);
-	echo "</pre>";
+	foreach ($results as $row)
+	{
+		foreach ($row as $key => $value)
+		{	//Aqui o key e coluna que vem do DB
+			echo "<strong>".$key.": </strong>".$value."<br>";
+		}
+
+		echo "- - - - - - - - - - - - - - - - - - - - - - - -<br>";
+	}
+
+	/*
+		echo "<pre>";
+		var_dump($results);
+		echo "</pre>";
+	*/
