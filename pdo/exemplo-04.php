@@ -1,5 +1,6 @@
 <?php
-	
+
+	/* DATABASE - PDO UPDATE */	
 	$conn = new PDO("mysql:dbname=dbphp7;host=localhost","root","");
 
 	$stmt = $conn->prepare("UPDATE tb_usuarios SET deslogin = :LOGIN, dessenha = :PASSWORD WHERE id_usuario = :ID");
