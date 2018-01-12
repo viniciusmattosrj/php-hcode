@@ -1,5 +1,6 @@
 <?php
-
+	
+	/* PDO - DAO */
 	require_once("config/config.php");
 
 	$sql = new Sql();

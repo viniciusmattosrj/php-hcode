@@ -1,6 +1,6 @@
 <?php 
 
-	/* CLASSE SQL */
+	/* CLASSE SQL DAO */
 	class Sql extends PDO {
 		private $conn;
 
