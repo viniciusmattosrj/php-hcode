@@ -36,8 +36,11 @@
 	/* 5º) Carrega informações usuário após login e senha  */ 
 	$aluno = new Usuario();
 
-	$aluno->setDeslogin("Andrade");
-	$aluno->setDessenha("@qwert");
+	/* CLEAN CODE - Usando o construtor omitindo essa passagem de parametros
+		$aluno->setDeslogin("Andrade");
+		$aluno->setDessenha("@qwert");
+	*/
+	$aluno = new Usuario("Adilio","Mundial81");
 	$aluno->insert();
 
 	echo $aluno;
