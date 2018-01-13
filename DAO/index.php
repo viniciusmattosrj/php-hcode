@@ -13,7 +13,13 @@
 	*/
 	
 	/* 2º) Carrega uma lista de usuários */ 
-	$lista = Usuario::getList();
+	/*
+		$lista = Usuario::getList();
+	
+		echo json_encode($lista); 
+	*/	
 
-	echo json_encode($lista); 
-		
+	/* 3º) Carrega uma lista de usuários buscando pelo login */ 
+	$search = Usuario::search("eu");
+
+	echo json_encode($search);
