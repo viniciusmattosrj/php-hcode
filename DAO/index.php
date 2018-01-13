@@ -3,16 +3,17 @@
 	/* PDO - DAO */
 	require_once ("config/config.php");
 
-	$root = new Usuario();
-
-	$root->loadById(4);
-
-	echo $root;
-	
+	/* 1º) Lista um único usuário */ 
 	/*
-		$sql = new Sql();
+		$root = new Usuario();
 
-		$usuarios = $sql->select("SELECT * FROM tb_usuarios");
+		$root->loadById(4);
 
-		echo json_encode($usuarios);
+		echo $root;
 	*/
+	
+	/* 2º) Carrega uma lista de usuários */ 
+	$lista = Usuario::getList();
+
+	echo json_encode($lista); 
+		
