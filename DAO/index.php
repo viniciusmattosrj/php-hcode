@@ -19,7 +19,15 @@
 		echo json_encode($lista); 
 	*/	
 
-	/* 3º) Carrega uma lista de usuários buscando pelo login */ 
-	$search = Usuario::search("eu");
+	/* 3º) Carrega uma lista de usuários buscando pelo login  */ 
+	/* 
+		$search = Usuario::search("eu");
 
-	echo json_encode($search);
+		echo json_encode($search);
+	*/
+
+	/* 4º) Carrega informações usuário após login e senha  */ 
+	$usuario = new Usuario();
+	$usuario->login("Vizeu","Fl@2018");
+	echo  $usuario;
+	
