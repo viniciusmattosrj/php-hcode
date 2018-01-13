@@ -33,14 +33,26 @@
 		echo  $usuario;
 	*/
 	
-	/* 5º) Carrega informações usuário após login e senha  */ 
-	$aluno = new Usuario();
+	/* 5º) Criando um novo usuário */ 
+	//$aluno = new Usuario();
 
 	/* CLEAN CODE - Usando o construtor omitindo essa passagem de parametros
 		$aluno->setDeslogin("Andrade");
 		$aluno->setDessenha("@qwert");
 	*/
-	$aluno = new Usuario("Adilio","Mundial81");
-	$aluno->insert();
 
-	echo $aluno;
+	/*
+		$aluno = new Usuario("Adilio","Mundial81");
+		$aluno->insert();
+
+		echo $aluno;
+	*/
+
+	/* 6º) Realizando atualizando os dados  */ 
+	$usuario = new Usuario();
+
+	$usuario->loadById(7);
+
+	$usuario->update ("Reinaldo", "Fl@1999");
+
+	echo $usuario;
