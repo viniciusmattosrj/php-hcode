@@ -49,10 +49,21 @@
 	*/
 
 	/* 6º) Realizando atualizando os dados  */ 
+	/*
+		$usuario = new Usuario();
+
+		$usuario->loadById(7);
+
+		$usuario->update ("Reinaldo", "Fl@1999");
+
+		echo $usuario;
+	*/
+
+	/* 7º) Excluindo os dados  */
 	$usuario = new Usuario();
 
-	$usuario->loadById(7);
+	$usuario->loadById(10);
 
-	$usuario->update ("Reinaldo", "Fl@1999");
+	$usuario->delete();
 
 	echo $usuario;
