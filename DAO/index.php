@@ -27,7 +27,17 @@
 	*/
 
 	/* 4º) Carrega informações usuário após login e senha  */ 
-	$usuario = new Usuario();
-	$usuario->login("Vizeu","Fl@2018");
-	echo  $usuario;
+	/*
+		$usuario = new Usuario();
+		$usuario->login("Vizeu","Fl@2018");
+		echo  $usuario;
+	*/
 	
+	/* 5º) Carrega informações usuário após login e senha  */ 
+	$aluno = new Usuario();
+
+	$aluno->setDeslogin("Andrade");
+	$aluno->setDessenha("@qwert");
+	$aluno->insert();
+
+	echo $aluno;
