@@ -12,7 +12,11 @@
             $filename = "images" . DIRECTORY_SEPARATOR . $img;
             
             $info = pathinfo ($filename);
-        
+
+            $info["size"] = filesize($filename);
+            $info["modified"] = date("d/m/Y H:i:s", filemtime($filename));
+            $info["url"] = "http://localhost/DIR/".$filename;
+                    
             array_push($data, $info);
         }
     }
