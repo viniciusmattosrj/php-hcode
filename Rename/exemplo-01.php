@@ -18,5 +18,9 @@
 		fclose($file);
 	}
 
+	rename(
+		$dir1 .DIRECTORY_SEPARATOR . $filename, // Origem arquivo
+		$dir2 .DIRECTORY_SEPARATOR . $filename  // Destino arquivo
+	);
 
-
+	echo "Arquivo movido com sucesso";
