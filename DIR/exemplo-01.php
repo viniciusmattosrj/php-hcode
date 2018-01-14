@@ -11,5 +11,5 @@
     else
     {
         rmdir($name);
-        echo "Já existe o diretório: $name";
+        echo "Já existe o diretório. O diretório $name foi apagado!";
     }
