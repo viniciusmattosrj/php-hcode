@@ -2,7 +2,6 @@
 	
 	<input type="file" name="fileUpload">
 
-
 	<button type="submit">Send</button>
 	
 </form>
