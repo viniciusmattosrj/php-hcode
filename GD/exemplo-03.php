@@ -13,7 +13,10 @@
 
 	header("Content-type: image/jpeg");
 
-	imagejpeg($image);
-	//imagejpeg($image,"certificado-".date("Y-m-d").".jpg");
+	/* Imprime na tela */
+	//imagejpeg($image);
+
+	/* Não exibe na tela, mas cria o arquivo no diretório configurado. */ 
+	imagejpeg($image,"certificado-".date("Y-m-d").".jpg");
 
 	imagedestroy($image);
