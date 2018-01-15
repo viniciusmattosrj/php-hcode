@@ -4,6 +4,7 @@
 	header("Content-type: image/jpeg");
 
 	$file = "wallpaper.jpg";
+	
 	/* Diferente do .css aqui não precixo passar o sufixo px (pixel) */
 	$new_width = 256;
 	$new_height = 256;
