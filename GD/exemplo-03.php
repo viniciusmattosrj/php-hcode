@@ -1,6 +1,6 @@
 <?php
 	
-	/* BIBLIOTECA GD - Escrevendo em Imagens */
+	/* BIBLIOTECA GD - Fontes TTF - Escrevendo em Imagens */
 	$image = imagecreatefromjpeg("certificado.jpg");
 
 	$titleColor = imagecolorallocate($image, 0, 0, 0);
