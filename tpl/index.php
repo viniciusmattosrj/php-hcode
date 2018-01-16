@@ -1,5 +1,6 @@
 <?php
 
+	/* Templates com RainTPL */
 	require_once("vendor/autoload.php");
 
 	use Rain\Tpl;
