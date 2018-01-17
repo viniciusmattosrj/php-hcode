@@ -9,7 +9,7 @@
 		exit("Pegamos você!!!");
 	}
 
-	$conn = mysqli_connect("localhost","root","#Dev@8481","dbphp7");
+	$conn = mysqli_connect("localhost","root","","dbphp7");
 
 	$sql = "SELECT * FROM tb_usuarios WHERE id_usuario = $id";
 
