@@ -4,7 +4,10 @@
 	
 	if($_SERVER["REQUEST_METHOD"] === 'POST')
 	{
-		$cmd = $_POST["cmd"];
+		/* A função escape acrescenta barra para evitar a execução de comandos */		
+		$cmd = escapeshellcmd($_POST["cmd"]);
+
+		var_dump($cmd);
 
 		echo "<pre>";
 
