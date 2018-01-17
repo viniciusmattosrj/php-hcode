@@ -1,5 +1,6 @@
 <?php
 
+	/* IMPORTANCIA PERMISSÕES PASTA */
 	$pasta = "arquivos";
 	$permissao = "0775";
 

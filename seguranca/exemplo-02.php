@@ -22,8 +22,6 @@
 		echo "</pre>";
 	}
 
-
-
 	/*
 		Exemplo de comando para exibir todos os dados
 		localhost:8000/seguranca/exemplo-02.php?id=4 OR 1 = 1 --
