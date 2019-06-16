@@ -29,7 +29,7 @@ docker-compose up -d
 Em outra aba do terminal se conecte no container do php e inicie um servidor built in do PHP
 ```
 docker exec -it php bash
-php -S 10.11.0.2:8008 -t public
+php -S 10.11.0.11:8008 -t public
 ```
 
 No browser digite http://10.11.0.11:8008
