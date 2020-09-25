@@ -1,14 +1,14 @@
-version: '2'
-services:
+version: '3'
 
+services:
   nginx:
     image: viniciusmattosrj/nginx
     container_name: nginx_projetos
     restart: always
     volumes:
      - ./config/nginx_conf/:/etc/nginx/conf.d
-    links:
-     - php:php
+    depends_on: :
+     - php
     networks:
       projetos_servicos:
         ipv4_address: 10.11.0.10
@@ -17,7 +17,7 @@ services:
     image: viniciusmattosrj/php:7.1
     container_name: php
     restart: always
-    command: bash -c "sed -i \"s/memory_limit = 128M/memory_limit = 2048M/\" /usr/local/etc/php/php.ini
+    command: bash -c "sed -i \"s/memory_limit = 128M/memory_limit = 1024M/\" /usr/local/etc/php/php.ini
                       && sed -i \"s/register_argc_argv = Off/register_argc_argv = On/\" /usr/local/etc/php/php.ini
                       && sed -i \"s/max_execution_time = 30/max_execution_time = 9999/\" /usr/local/etc/php/php.ini
                       && sed -i \"s/upload_max_filesize = 2M/upload_max_filesize = 30M/\" /usr/local/etc/php/php.ini
