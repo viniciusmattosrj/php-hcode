@@ -17,9 +17,9 @@ Curso Completo PHP7 HCode
 
 
 ## Instalação
-Realizar o git clone do projeto base para o funcionamento da sua rede docker:
+Para o correto funcionamento dos serviços base na rede do docker, execute o comando para clonar o projeto:
 ```bash
-git@github.com:viniciusmattosrj/projetos.git
+git clone git@github.com:viniciusmattosrj/projetos.git
 ```
 
 Para que o git não considere alterações de permissão como modificações a serem rastreadas, execute:
@@ -27,14 +27,14 @@ Para que o git não considere alterações de permissão como modificações a s
 git config core.fileMode false
 ```
 
-Agora suba o servidor:
+Para subir os containers docker execute:
 ```
 docker-compose up -d
 ```
 
-Navege até dentro da pasta projetos e realize o git clone do projeto
+Navege até dentro da pasta projetos e realize o git clone do projeto:
 ```bash
-cd projetos && git@github.com:viniciusmattosrj/php-hcode.git
+cd projetos && git clone git@github.com:viniciusmattosrj/PHP-PSRs.git
 ```
 
 Para que o git não considere alterações de permissão como modificações a serem rastreadas, execute:
