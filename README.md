@@ -13,7 +13,7 @@ Curso Completo PHP7 HCode
 
 - PHP >= 7.1
 
-- Postgres >= 9.6 ou Mysql >= 5.7
+- Postgres >= 11 ou Mysql >= 5.7
 
 
 ## Instalação
