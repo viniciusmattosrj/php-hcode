@@ -44,7 +44,7 @@ git config core.fileMode false
 
 Entre pelo terminal na pasta do projeto e rode:
 ```
-cp ./docker-compose-example.php  ./docker-compose.php
+cp -v ./docker-compose-example.php  ./docker-compose.php
 ```
 
 Agora suba o servidor:
@@ -69,7 +69,7 @@ psql -U webadm -c "CREATE DATABASE php_hcode";
 
 Realizando a importação dump sql para a base criada:
 ```
-psql -U webadm php_hcode < /var/lib/postgresql/sqlscript/php_hcode.pgsql
+psql -U webadm php_hcode < /var/lib/postgresql/dump/php_hcode.pgsql
 ```
 
 Para o acesso no <strong>POSTGRES</strong> database administration tool, use http://localhost:5050 e use as credênciais abaixo:
